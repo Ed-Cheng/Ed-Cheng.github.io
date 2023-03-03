@@ -194,7 +194,7 @@ input, select, textarea {
 			font-weight: 700;
 			letter-spacing: 0.1em;
 			margin: 0 0 2em 0;
-			text-transform: uppercase;
+			text-transform: none;
 		}
 
 			a.special:not(.button):before {
@@ -255,8 +255,8 @@ input, select, textarea {
 		font-family: Raleway, Helvetica, sans-serif;
 		font-weight: 700;
 		letter-spacing: 0.1em;
-		margin: 0 0 1em 0;
-		text-transform: uppercase;
+		margin: 1em 0 1em 0;
+		text-transform: none;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2172,7 +2172,7 @@ input, select, textarea {
 		font-weight: 700;
 		letter-spacing: 0.1em;
 		margin: 0 0 0.7em 0;
-		text-transform: uppercase;
+		text-transform: none;
 	}
 
 	input[type="text"],
@@ -2879,7 +2879,7 @@ input, select, textarea {
 		padding: 0 2.25em;
 		text-align: center;
 		text-decoration: none;
-		text-transform: uppercase;
+		text-transform: none;
 		white-space: nowrap;
 	}
 
@@ -3008,10 +3008,12 @@ input, select, textarea {
 			background-color: #353849;
 			border-radius: 5px;
 			margin: 1.5em 3em 1.5em 0;
-			width: calc(50% - 1.5em);
+			/* margin: 0em 0em 0em 0; */
+			/* width: calc(30% - 1.5em); */
+			width: calc(30% - 0.5em);
 		}
 
-			.features article:nth-child(2n) {
+			.features article:nth-child(3n) {
 				margin-right: 0;
 			}
 
@@ -3113,7 +3115,7 @@ input, select, textarea {
 			line-height: 3em;
 			position: absolute;
 			right: 0.7em;
-			text-transform: uppercase;
+			text-transform: none;
 			top: 0.7em;
 		}
 
@@ -3334,7 +3336,7 @@ input, select, textarea {
 					letter-spacing: 0.1em;
 					line-height: 1.85em;
 					padding: 0.75em 0;
-					text-transform: uppercase;
+					text-transform: none;
 				}
 
 					#menu .links li a:hover {
@@ -3459,7 +3461,7 @@ input, select, textarea {
 			font-weight: 200;
 			letter-spacing: 0.1em;
 			line-height: 2;
-			text-transform: uppercase;
+			text-transform: none;
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -3571,7 +3573,7 @@ input, select, textarea {
 			font-weight: 200;
 			letter-spacing: 0.1em;
 			line-height: 2;
-			text-transform: uppercase;
+			text-transform: none;
 		}
 
 	@media screen and (max-width: 1280px) {
@@ -3821,7 +3823,7 @@ input, select, textarea {
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
-				text-align: right;
+				text-align: left;
 			}
 
 			.wrapper.spotlight:nth-child(2n - 1) .image {
