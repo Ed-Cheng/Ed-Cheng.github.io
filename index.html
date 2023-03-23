@@ -31,8 +31,8 @@
 							<ul style="list-style-type: none">
 								<br>
 								<li><a href="mailto: edwardchengylc@gmail.com" class="icon solid fa-envelope" style="font-size: 1.5em;"></a></li>
-								<li><a href="https://www.linkedin.com/in/edward-cheng-015894229/" class="icon brands fa-linkedin-in" style="font-size: 1.5em;"></a></li>
-								<li><a href="https://github.com/Ed-Cheng" class="icon brands fa-github" style="font-size: 1.5em;"></a></li>
+								<li><a href="https://www.linkedin.com/in/edward-cheng-015894229/" target="_blank" class="icon brands fa-linkedin-in" style="font-size: 1.5em;"></a></li>
+								<li><a href="https://github.com/Ed-Cheng" target="_blank" class="icon brands fa-github" style="font-size: 1.5em;"></a></li>
 							</ul>
 						</h1>
 						
@@ -60,7 +60,7 @@
 									<a href="#one" class="image"><img src="images/profile.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">So, what made Edward Edward</h2>
-										<p>
+										<p style="text-align: justify;">
 											I started my UK journey at 
 											<b><a href="https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/electronic-and-electrical-engineering-beng" target="_blank" style="color: #ffc34b">UCL Electronic and Electrical Engineering</a></b>. 
 											The program gave me a strong foundation in engineering, science, and programming. 
@@ -73,7 +73,7 @@
 											<b><a href="#three" style="color: #ffc34b">emotional voice conversion</a></b>. 
 											which involved <b>audio analysis, CNN,</b> and <b>CycleGAN</b>.
 										</p>
-										<p>
+										<p style="text-align: justify;">
 											With a deep interest in machine learning, I pursued a MSc degree in 
 											<b><a href="https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/machine-learning-msc" target="_blank" style="color: #ffc34b">UCL Machine Learning</a></b>. 
 											During my studies, I gained invaluable hands-on experience with various aspects of machine learning, 
@@ -121,33 +121,27 @@
 						<!-- Three -->
 							<section id="three" class="wrapper spotlight style3" style="padding: 0 2em 0 3em">
 								<div class="inner">
-									<a href="#three" class="image"><img src="images/pic03.jpg" alt="" /></a>
+									<a href="#three" class="image"><img src="images/nubelson-fernandes-unsplash.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">Projects, the big ones</h2>
 										<ul>
-											<b><a href="#three" target="_blank" style="color: #ffc34b">Building Extraction with Enhanced Boundary</a></b>
+											<b><a href="https://github.com/Ed-Cheng/Building-Extraction-Enhanced-Boundary" target="_blank" style="color: #ffc34b">Building Extraction with Enhanced Boundary</a></b>
 											<br>
-											<blockquote>
+											<blockquote style="text-align: justify;">
 												Designed a semantic segmentation model to extract buildings from aerial images. 
 												Utilized building borders to improve the performance and developed a post-processing algorithm to refine the results further.
 											</blockquote>
-											<b><p style="text-align:right;">Python &nbsp TensorFlow &nbsp Keras &nbsp U-Net</p></b>
+											<b style="font-size:0.8em"><p style="text-align:right;">Python &nbsp TensorFlow &nbsp Keras &nbsp U-Net &nbsp QGIS &nbsp Label Studio</p></b>											
 
-											<b><a href="#three" target="_blank" style="color: #ffc34b">Emotional Voice Converter</a></b>
+											<b><a href="EVC report.pdf" target="_blank" style="color: #ffc34b">Emotional Voice Converter</a></b>
 											<br>
-											<blockquote>
+											<blockquote style="text-align: justify;">
 												Two models (CNN and CycleGAN) were constructed to convert the emotional features of a given speech. 
 												Contained extensive audio signal processing and evaluation. 
 												Introduced a fresh data analysis method for examining emotional cues present in audio results.
 											</blockquote>
-											<b><p style="text-align:right;">Python &nbsp TensorFlow &nbsp PyTorch &nbsp CycleGAN &nbsp Audio-processing</p></b>
+											<b style="font-size:0.8em"><p style="text-align:right;">Python &nbsp TensorFlow &nbsp PyTorch &nbsp CycleGAN &nbsp Audio-processing</p></b>
 
-											<b><a href="#three" target="_blank" style="color: #ffc34b">Attention net</a></b>
-											<br>
-											<blockquote>
-												still writing, intro to dl cw
-											</blockquote>
-											<b><p style="text-align:right;">Python &nbsp TensorFlow</p></b>
 										</ul>
 									</div>
 								</div>
@@ -160,48 +154,84 @@
 									<p style="text-align:center;">Some other projects done in UCL. And some personal side projects. Still updating</p>
 									<section class="features">
 										<div class="row gtr-uniform">
-											<div class="col-4">
-												<span class="image fit">
-													<article>
-														<h3 class="major">NLP cw</h3>
-														<p>The fake review cw</p>
-													</article>
-												</span>
+
+											<div id="fake-review" class="col-4">
+												<article style="height: 23em;">
+													<h3 class="major" style="height: 4em;">
+														<b><a href="https://github.com/Ed-Cheng/fake-reviews-generator" target="_blank" style="color: #ffc34b">Fake reviews generator</a></b>
+													</h3>
+													<p>
+														Generated synthetic reviews via large language models. 
+														Tested their human likeness via SOTA fake review classifiers. 
+													</p>
+													<b style="font-size:0.8em"><p style="text-align:right;">Sklearn &nbsp Transformers &nbsp NLP &nbsp Pandas &nbsp PyTorch &nbsp NumPy</p></b>
+												</article>
 											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<article>
-														<h3 class="major">data mining</h3>
-														<p>different data mining techniques</p>
-													</article>
-												</span>
+
+											<div id="multi-task" class="col-4">
+												<article style="height: 23em;">
+													<h3 class="major" style="height: 4em;">
+														<b><a href="https://github.com/Ed-Cheng/multitask_learning-vs-attention" target="_blank" style="color: #ffc34b">Evaluating multi-task learning vs attention</a></b>
+													</h3>
+													<p>
+														Built multi-task learning models based on Efficient-Net. 
+														Further improved the performance with a gated attention mechanism.
+													</p>
+													<b style="font-size:0.8em"><p style="text-align:right;">TensorFlow &nbsp Matplotlib &nbsp Pandas &nbsp NumPy</p></b>
+												</article>
 											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<article>
-														<h3 class="major">machine vision</h3>
-														<p>the apples with gaussian filter</p>
-													</article>
-												</span>
+
+											<div id="improve-irm" class="col-4">
+												<article style="height: 23em;">
+													<h3 class="major" style="height: 4em;">
+														<b><a href="https://github.com/Ed-Cheng/information-retrieval-model" target="_blank" style="color: #ffc34b">Improved information retrieval model</a></b>
+													</h3>
+													<p>
+														Extension of <a href="#basic-irm" style="color: #ffc34b">this project</a>.
+														Compared the performance of BM25 to logistic regression, LambdaMART, and neural network.
+													</p>
+													<b style="font-size:0.8em"><p style="text-align:right;">nltk &nbsp csv &nbsp LR &nbsp NN &nbsp LambdaMART &nbsp Information retrieval</p></b>
+												</article>
 											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<article>
-														<h3 class="major">intro to dl</h3>
-														<p>more coming</p>
-														<a href="#" class="special">Learn more</a>
-													</article>
-												</span>
+
+											<div id="basic-irm" class="col-4">
+												<article style="height: 23em;">
+													<h3 class="major" style="height: 4em;">
+														<b><a href="https://github.com/Ed-Cheng/information-retrieval-model" target="_blank" style="color: #ffc34b">Basic information retrieval model</a></b>
+													</h3>
+													<p>
+														Pre-processing including cleaning, tokenising, lemmatising.
+														Models including BM25, Laplace smoothing, Lidstone correction, and Dirichlet smoothing.
+													</p>
+													<b style="font-size:0.8em"><p style="text-align:right;">nltk &nbsp csv &nbsp Information retrieval </p></b>
+												</article>
 											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<article>
-														<h3 class="major">more coming</h3>
-														<p>more coming</p>
-														<a href="#" class="special">Learn more</a>
-													</article>
-												</span>
+
+											<div id="GMM" class="col-4">
+												<article style="height: 23em;">
+													<h3 class="major" style="height: 4em;">
+														<b><a href="https://github.com/Ed-Cheng/Gaussian-Mixtures-EM-algorithm" target="_blank" style="color: #ffc34b">Gaussian Mixtures & the EM Algorithm</a></b>
+													</h3>
+													<p>
+														Experimenting with Gaussian mixture models on images and EM algorithms on 2D data points.
+													</p>
+													<b style="font-size:0.8em"><p style="text-align:right;">GMM &nbsp EM &nbsp scipy &nbsp Matplotlib &nbsp NumPy </p></b>
+												</article>
 											</div>
+
+											<div id="GMM" class="col-4">
+												<article style="height: 23em;">
+													<h3 class="major" style="height: 4em;">
+														<b><a href="https://github.com/Ed-Cheng/deep-learning-basic" target="_blank" style="color: #ffc34b">Deep learning basics</a></b>
+													</h3>
+													<p>
+														Coding from scratch to gain familiarity with various deep learning techniques. 
+														Including SGD, DenseNet, data augmentation, and cross-validation.
+													</p>
+													<b style="font-size:0.8em"><p style="text-align:right;">TensorFlow &nbsp NumPy &nbsp SGD &nbsp CV</p></b>
+												</article>
+											</div>
+
 									</section>
 								</div>
 							</section>
@@ -218,8 +248,9 @@
 								<li><a href="https://github.com/Ed-Cheng" class="icon brands fa-github"><span class="label">Github</span></a></li>
 							</ul> -->
 							<ul class="copyright" style="text-align:center">
-								<li>Designed by <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>Designed by <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
 								<li>Revised & Built by <a href="https://ed-cheng.github.io/">Edward Cheng</a></li>
+								<li>Photo credits: <a href="https://www.ucl.ac.uk/cam/brand/resources/image-library/campus" target="_blank">UCL image </a> & <a href="https://unsplash.com/" target="_blank">Unsplash</a></li>
 							</ul>
 						</div>
 					</section>
