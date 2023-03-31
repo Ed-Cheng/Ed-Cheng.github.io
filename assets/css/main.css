@@ -242,6 +242,10 @@ input, select, textarea {
 		font-weight: 600;
 	}
 
+		b a {
+			color: #ffc34b;
+		}
+
 	em, i {
 		font-style: italic;
 	}
