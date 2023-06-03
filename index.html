@@ -163,91 +163,117 @@
 								<div class="inner">
 									<h2 class="major" style="text-align:center">Projects, the small ones</h2>
 									<!-- <p style="text-align:center;">Some other projects done in UCL. And some personal side projects.</p> -->
-									<section class="features">
-										<article>
-											<h3 class="major">
-												<b><a href="https://github.com/Ed-Cheng/Moving-avg-trading-strategy" target="_blank" >Moving avg trading strategy</a></b>
-											</h3>
-											<p>
-												An easy to follow trading strategy based on Dollar Cost Averaging.
-												Ideal for busy office workers who still want to invest.
-												Includes backtesting and profit visualization.
-											</p>
-											<b style="font-size:0.8em"><p style="text-align:right;">Matplotlib &nbsp Pandas &nbsp NumPy</p></b>
-										</article>
 
-										<article>
-											<h3 class="major">
-												<b><a href="https://github.com/Ed-Cheng/multitask_learning-vs-attention" target="_blank" >Evaluating multi-task learning vs attention</a></b>
-											</h3>
-											<p>
-												Built multi-task learning models based on Efficient-Net. 
-												Further improved the performance with a gated attention mechanism.
-											</p>
-											<br>
-											<b style="font-size:0.8em"><p style="text-align:right;">TensorFlow &nbsp Matplotlib &nbsp Pandas &nbsp NumPy</p></b>
-										</article>
+									<!-- Control buttons -->
+									<div id="myBtnContainer" style="text-align:center">
+										<button class="btn active" onclick="filterSelection('all')"> All</button>
+										<button class="btn" onclick="filterSelection('ml')"> AI/ML</button>
+										<button class="btn" onclick="filterSelection('analysis')"> Analysis</button>
+										<button class="btn" onclick="filterSelection('stock')"> Stock</button>
+									</div>
+									<br>
 
-										<article>
-											<h3 class="major">
-												<b><a href="https://github.com/Ed-Cheng/fake-reviews-generator" target="_blank" >Fake reviews generator </a></b>
-												<br><br>
-											</h3>
-											<p>
-												Generated synthetic reviews via large language models. 
-												Tested their human likeness via SOTA fake review classifiers. 
-											</p>
-											<br>
-											<b style="font-size:0.8em"><p style="text-align:right;">Sklearn &nbsp Transformers &nbsp NLP &nbsp Pandas &nbsp PyTorch &nbsp NumPy</p></b>
-										</article>
+									<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+									<div class="container">
+										<section class="features">
+											<article class="filterDiv analysis stock">
+												<h3 class="major">
+													<b><a href="https://github.com/Ed-Cheng/Potential-Stock-Finder" target="_blank" >Potential stock finder</a></b>
+													<br><br>
+												</h3>
+												<p>
+													Similar to stock screeners. 
+													But with a better feature: easy customisation.
+												</p>
+												<br><br><br>
+												<b style="font-size:0.8em"><p style="text-align:right;">Web scraping &nbsp Pandas &nbsp NumPy</p></b>
+											</article>
 
-										<article>
-											<h3 class="major">
-												<b><a href="https://github.com/Ed-Cheng/impoved-information-retrieval-model" target="_blank" >Improved information retrieval model</a></b>
-											</h3>
-											<p>
-												Extension of <a href="#basic-irm" >the basic model</a>.
-												Compared the performance of BM25 to logistic regression, LambdaMART, and neural network.
-											</p>
-											<b style="font-size:0.8em"><p style="text-align:right;">nltk &nbsp csv &nbsp LR &nbsp NN &nbsp LambdaMART &nbsp Information retrieval</p></b>
-										</article>
+											<article class="filterDiv analysis stock">
+												<h3 class="major">
+													<b><a href="https://github.com/Ed-Cheng/Moving-avg-trading-strategy" target="_blank" >Moving avg trading strategy</a></b>
+												</h3>
+												<p>
+													An easy to follow trading strategy based on Dollar Cost Averaging.
+													Ideal for busy office workers who still want to invest.
+													Includes backtesting and profit visualization.
+												</p>
+												<b style="font-size:0.8em"><p style="text-align:right;">Matplotlib &nbsp Pandas &nbsp NumPy</p></b>
+											</article>
 
-										<article id="basic-irm">
-											<h3 class="major">
-												<b><a href="https://github.com/Ed-Cheng/information-retrieval-model" target="_blank" >Basic information retrieval model</a></b>
-											</h3>
-											<p>
-												Pre-processing including cleaning, tokenising, lemmatising.
-												Models including BM25, Laplace smoothing, Lidstone correction, and Dirichlet smoothing.
-											</p>
-											<br>
-											<b style="font-size:0.8em"><p style="text-align:right;">nltk &nbsp csv &nbsp Information retrieval </p></b>
-										</article>
+											<article class="filterDiv ml">
+												<h3 class="major">
+													<b><a href="https://github.com/Ed-Cheng/multitask_learning-vs-attention" target="_blank" >Evaluating multi-task learning vs attention</a></b>
+												</h3>
+												<p>
+													Built multi-task learning models based on Efficient-Net. 
+													Further improved the performance with a gated attention mechanism.
+												</p>
+												<br>
+												<b style="font-size:0.8em"><p style="text-align:right;">TensorFlow &nbsp Matplotlib &nbsp Pandas &nbsp NumPy</p></b>
+											</article>
 
-										<article>
-											<h3 class="major">
-												<b><a href="https://github.com/Ed-Cheng/Gaussian-Mixtures-EM-algorithm" target="_blank" >Gaussian Mixtures & the EM Algorithm</a></b>
-											</h3>
-											<p>
-												Experimenting with Gaussian mixture models on images and EM algorithms on 2D data points.
-											</p>
-											<br><br><br>
-											<b style="font-size:0.8em"><p style="text-align:right;">GMM &nbsp EM &nbsp scipy &nbsp Matplotlib &nbsp NumPy </p></b>
-										</article>
+											<article class="filterDiv ml">
+												<h3 class="major">
+													<b><a href="https://github.com/Ed-Cheng/fake-reviews-generator" target="_blank" >Fake reviews generator </a></b>
+													<br><br>
+												</h3>
+												<p>
+													Generated synthetic reviews via large language models. 
+													Tested their human likeness via SOTA fake review classifiers. 
+												</p>
+												<br>
+												<b style="font-size:0.8em"><p style="text-align:right;">Sklearn &nbsp Transformers &nbsp NLP &nbsp Pandas &nbsp PyTorch &nbsp NumPy</p></b>
+											</article>
 
-										<article>
-											<h3 class="major">
-												<b><a href="https://github.com/Ed-Cheng/deep-learning-basic" target="_blank" >Deep learning basics</a></b>
-												<br><br>
-											</h3>
-											<p>
-												Coding from scratch to gain familiarity with various deep learning techniques. 
-												Including SGD, DenseNet, data augmentation, and cross-validation.
-											</p>
-											<b style="font-size:0.8em"><p style="text-align:right;">TensorFlow &nbsp NumPy &nbsp SGD &nbsp CV</p></b>
-										</article>
+											<article class="filterDiv ml">
+												<h3 class="major">
+													<b><a href="https://github.com/Ed-Cheng/impoved-information-retrieval-model" target="_blank" >Improved information retrieval model</a></b>
+												</h3>
+												<p>
+													Extension of <a href="#basic-irm" >the basic model</a>.
+													Compared the performance of BM25 to logistic regression, LambdaMART, and neural network.
+												</p>
+												<b style="font-size:0.8em"><p style="text-align:right;">nltk &nbsp csv &nbsp LR &nbsp NN &nbsp LambdaMART &nbsp Information retrieval</p></b>
+											</article>
 
-									</section>
+											<article id="basic-irm" class="filterDiv ml">
+												<h3 class="major">
+													<b><a href="https://github.com/Ed-Cheng/information-retrieval-model" target="_blank" >Basic information retrieval model</a></b>
+												</h3>
+												<p>
+													Pre-processing including cleaning, tokenising, lemmatising.
+													Models including BM25, Laplace smoothing, Lidstone correction, and Dirichlet smoothing.
+												</p>
+												<br>
+												<b style="font-size:0.8em"><p style="text-align:right;">nltk &nbsp csv &nbsp Information retrieval </p></b>
+											</article>
+
+											<article class="filterDiv ml">
+												<h3 class="major">
+													<b><a href="https://github.com/Ed-Cheng/Gaussian-Mixtures-EM-algorithm" target="_blank" >Gaussian Mixtures & the EM Algorithm</a></b>
+												</h3>
+												<p>
+													Experimenting with Gaussian mixture models on images and EM algorithms on 2D data points.
+												</p>
+												<br><br><br>
+												<b style="font-size:0.8em"><p style="text-align:right;">GMM &nbsp EM &nbsp scipy &nbsp Matplotlib &nbsp NumPy </p></b>
+											</article>
+
+											<article class="filterDiv ml">
+												<h3 class="major">
+													<b><a href="https://github.com/Ed-Cheng/deep-learning-basic" target="_blank" >Deep learning basics</a></b>
+													<br><br>
+												</h3>
+												<p>
+													Coding from scratch to gain familiarity with various deep learning techniques. 
+													Including SGD, DenseNet, data augmentation, and cross-validation.
+												</p>
+												<b style="font-size:0.8em"><p style="text-align:right;">TensorFlow &nbsp NumPy &nbsp SGD &nbsp CV</p></b>
+											</article>
+
+										</section>
+									</div>
 								</div>
 							</section>
 
