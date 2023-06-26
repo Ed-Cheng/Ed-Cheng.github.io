@@ -1,5 +1,4 @@
 # Ed-Cheng.github.io
 
-Just a website, of course
+Yep. My website. 😎
 
-github keep telling me to put a README so, yeah
